@@ -9,6 +9,7 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
 
 To resolve this you just need to add a small delay check to ensure it doesn't fire twice. (This is known as *debouncing* in electronics)
 
+```csharp
     private float _prevPress;
     void OnClick()
     {  
@@ -19,4 +20,5 @@ To resolve this you just need to add a small delay check to ensure it doesn't fi
         
         // Handle the click here
     }
+```
 You can add this to the button with the problem, or integrate this into UIButton in NGUI to cover all buttons.
