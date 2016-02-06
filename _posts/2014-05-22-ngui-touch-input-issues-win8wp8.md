@@ -10,15 +10,15 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
 To resolve this you just need to add a small delay check to ensure it doesn't fire twice. (This is known as *debouncing* in electronics)
 
 ```csharp
-    private float _prevPress;
-    void OnClick()
-    {  
-        if (Time.realtimeSinceStartup < (_prevPress + 0.15f))
-            return;
-        else
-            _prevPress = Time.realtimeSinceStartup;
-        
-        // Handle the click here
-    }
+private float _prevPress;
+void OnClick()
+{  
+    if (Time.realtimeSinceStartup < (_prevPress + 0.15f))
+        return;
+    else
+        _prevPress = Time.realtimeSinceStartup;
+    
+    // Handle the click here
+}
 ```
 You can add this to the button with the problem, or integrate this into UIButton in NGUI to cover all buttons.
