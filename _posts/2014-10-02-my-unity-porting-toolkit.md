@@ -7,7 +7,7 @@ Over the last year and a half I've been involved in porting many games over to t
 
 While doing this I have built up a small set of invaluable tools to assist with the task. I decided I should probably post this small list up in case some of these are new to anyone out there.
 
-###What I Use
+### What I Use
 * [Visual Studio 2013 Update 3](http://www.visualstudio.com/) (Pro or higher required for plugins)
 * [Visual Studio Tools for Unity](http://unityvs.com/) (aka UnityVS)
 * [Bing Developer Assistant](http://visualstudiogallery.msdn.microsoft.com/a1166718-a2d9-4a48-a5fd-504ff4ad1b65)
@@ -16,7 +16,7 @@ While doing this I have built up a small set of invaluable tools to assist with 
 
 So what do I use each of these for? Well Visual Studio is obvious, but the rest may not be, especially for developers not involved in the Microsoft development world.
 
-###What Are These Things?
+### What Are These Things?
 Let's start with the **Visual Studio Tools for Unity** (UnityVS). This plugin comes in two parts, the extension for Visual Studio (2010/2012/2013) and a Unity Package that you add to your project. When combined this tool allows you to write your scripts using Visual Studio, and even debug in editor. But the big benefit that isn't mentioned, is the IDE support for scripts, even if you aren't working in the editor. Unity for Windows Store and Windows Phone allows developers to debug on device using Visual Studio, and to do that you need to add the MonoDevelop or UnityVS project to your solution. This plugin allows you to edit those scripts with full support in the IDE, making the edit > rebuild > run loop much faster.
 
 Next is the **Bing Developer Assistant**. This little extension provides inline code snippets from the web for APIs that you may want to use. When I say inline, I mean it includes them alongside your intellisense drop-down, making it really easy to figure out how you're supposed to use a new API. This is very important when porting games because you will spend a fair bit of time converting code to work with new APIs and many of them may be completely new to you. Save yourself some time searching for examples online by letting this extension find them for you.
