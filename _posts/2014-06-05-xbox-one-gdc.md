@@ -17,12 +17,14 @@ The spec available to developers on the Xbox is:
 
 ### APIs
 #### Available
+
 * Direct3D 11.1 (with extensions)
 * DXGI 1.2
 * Custom Controller API (not XInput)
 * HTML/JavaScript
 
 #### Unavailable
+
 * Direct2D
 * DirectWrite
 * (Games Only) XAML
