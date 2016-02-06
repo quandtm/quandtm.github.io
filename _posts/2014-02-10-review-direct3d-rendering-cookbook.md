@@ -4,7 +4,7 @@ layout: post
 author: Michael Quandt
 ---
 ### Direct3D Rendering Cookbook
-![Book Cover Image](http://mquandt.com/blog/content/images/2014/Apr/7101OT_Direct3D-Rendering-Cookbook.png)
+![Book Cover Image](https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/7101OT_Direct3D%20Rendering%20Cookbook.jpg)
 
 Author: **Justin Stenning**
 *Packt Publishing*  
