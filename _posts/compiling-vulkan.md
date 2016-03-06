@@ -7,7 +7,7 @@ title: Compiling Vulkan from Scratch
 
 *Works for SDK version 1.0.3*
 
-A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the (Official Website)[http://vulkan.lunarg.com].
+A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the [Official Website](http://vulkan.lunarg.com).
 
 At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest. This however means that our version of GLIBC is older than what you may find in more recent Ubuntu installs, which LunarG targetted for the Linux SDK.
 
@@ -34,8 +34,10 @@ These two elements are connected and powered by the Vulkan loader (libvulkan.so 
 ## Get the Source ##
 
 First clone the following repositories from github:
-(https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers.git)[https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers.git]
-(https://github.com/LunarG/VulkanTools.git)[https://github.com/LunarG/VulkanTools.git]
+[https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers.git](https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers.git)
+[https://github.com/LunarG/VulkanTools.git](https://github.com/LunarG/VulkanTools.git)
+
+At the time of writing the latest SDK is 1.0.3. You will probably want to checkout the branch containing the latest SDK rather than master, so you have a stable release rather than something in development.
 
 ## Update & Build Dependencies ##
 
@@ -83,4 +85,11 @@ To compile this, just build the demos by re-running cmake without the -DBUILD_DE
 TODO: Write mapping of build artifacts to SDK locations
 
 ## Environment Configuration ##
-TODO: Write about environment variables required for auto-detection of libraries, SDK and layers.
+You will need to set the following environment variables to be able to use the various aspects of the SDK:
+
+|Variable|Action|Value|
+|----|----|----|
+|LD_LIBRARY_PATH|Append|\<root\>/lib|
+|PATH|Append|\<root\>/bin|
+|VK_LAYER_PATH|Set|\<root\>/lib/vulkan/layer|
+|VULKAN_SDK|Set|\<root\>|
