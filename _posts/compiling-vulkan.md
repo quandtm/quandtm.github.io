@@ -45,7 +45,7 @@ This will download the repositories the loader and validation layers require (SP
 
 Once this is done, move to the VulkanTools repository and do the same.
 
-## CMAKE Configuration ##
+## CMAKE Configuration & Compilation ##
 This article focuses on GLIBC 2.12, however it should apply to most versions, and this is probably the section that will differ the most, so please test and remember that your mileage may vary.
 
 In 2.12 the string format macros are not globally defined, as the SDK expects. If you see any errors that require macros such as PRIx64, just add the following lines to the CMakeLists.txt file in both of the repositories you cloned:
@@ -54,4 +54,33 @@ In 2.12 the string format macros are not globally defined, as the SDK expects. I
 add_definitions(-D__STDC_FORMAT_MACROS)
 ```
 
-This line will enable those macros. You may also want to disable compilation of vkjson_info and the demos as some of them require the alignedmalloc function that was addded to a more recentl glibc (but which is missing from 2.12). To do this, just add -DBUILD_DEMOS_off and -DBUILD_VKJSON=off to the cmake command line we will execute later.
+This line will enable those macros. You may also want to disable compilation of vkjson_info and the demos as some of them require the alignedmalloc function that was addded to a more recentl glibc (but which is missing from 2.12). To do this, just add -DBUILD_DEMOS_off and -DBUILD_VKJSON=off to the cmake command line we will execute later. These aren't required to use the SDK, however you may want to build them just to complete the SDK (where possible).
+
+**Vulkan-LoaderAndValidationLayers**
+```
+cmake -H. -B<build folder> -DCMAKE_BUILD_TYPE=<build type> -DBUILD_TESTS=off -DBUILD_VKJSON=off -DBUILD_DEMOS=off
+```
+
+**VulkanTools**
+```
+cmake -H. -B<build folder> -DCMAKE_BUILD_TYPE=<build type> -DBUILD_TESTS=off -DBUILD_VKJSON=off -DBUILD_DEMOS=off -DBUILD_LOADER=off -DBUILD_LAYERS=off
+```
+
+The following build types are available:
+* Debug
+* RelWithDebInfo
+* Release
+
+Finally we're on to the main point of the article. The compilation itself is fairly straightforward, just navigate to the build directory and call make. Remeber you can pass the `-j <number>` argument to thread the compilation.
+
+Once compilation of both projects finish, you can find the various binaries inside the build folders of `Vulkan-LoaderAndValidationTools`, `VulkanTools`, `spirv-tools` and `glslang` as described in the next section.
+
+*Note that if you opted not to build the demos, the vulkaninfo app/program will not be available for you to use for testing. This is quite useful as it prints out the Vulkan configuration and details for your system, and can be useful as a vulkan equivalent of dxdiag, or even to test if your layers are installed correctly.
+
+To compile this, just build the demos by re-running cmake without the -DBUILD_DEMOS=off flag. However make sure you have extracted your build output (as described below) first, or build to another folder and turn off all of the other options.
+
+## Build Output ##
+TODO: Write mapping of build artifacts to SDK locations
+
+## Environment Configuration ##
+TODO: Write about environment variables required for auto-detection of libraries, SDK and layers.
