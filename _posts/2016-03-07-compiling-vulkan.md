@@ -59,11 +59,13 @@ add_definitions(-D__STDC_FORMAT_MACROS)
 This line will enable those macros. You may also want to disable compilation of vkjson_info and the demos as some of them require the alignedmalloc function that was addded to a more recentl glibc (but which is missing from 2.12). To do this, just add -DBUILD_DEMOS_off and -DBUILD_VKJSON=off to the cmake command line we will execute later. These aren't required to use the SDK, however you may want to build them just to complete the SDK (where possible).
 
 **Vulkan-LoaderAndValidationLayers**
+
 ```
 cmake -H. -B<build folder> -DCMAKE_BUILD_TYPE=<build type> -DBUILD_TESTS=off -DBUILD_VKJSON=off -DBUILD_DEMOS=off
 ```
 
 **VulkanTools**
+
 ```
 cmake -H. -B<build folder> -DCMAKE_BUILD_TYPE=<build type> -DBUILD_TESTS=off -DBUILD_VKJSON=off -DBUILD_DEMOS=off -DBUILD_LOADER=off -DBUILD_LAYERS=off
 ```
@@ -81,12 +83,12 @@ Once compilation of both projects finish, you can find the various binaries insi
 
 To compile this, just build the demos by re-running cmake without the -DBUILD_DEMOS=off flag. However make sure you have extracted your build output (as described below) first, or build to another folder and turn off all of the other options.
 
-## Final Steps ##
-### Build Output ###
+# Final Steps #
+## Build Output ##
 The various files required for the Vulkan SDK can be found inside the build directory, specified by using the -B flag with cmake.
 Extract the downloadable SDK to get the include files, as well as the json files for the various layers. *(You can also find these inside the source directories)*
 
-### Environment Configuration ###
+## Environment Configuration ##
 You will need to set the following environment variables to be able to use the various aspects of the SDK:
 
 |Variable|Action|Value|
