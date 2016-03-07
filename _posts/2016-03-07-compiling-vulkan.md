@@ -84,11 +84,14 @@ Once compilation of both projects finish, you can find the various binaries insi
 To compile this, just build the demos by re-running cmake without the -DBUILD_DEMOS=off flag. However make sure you have extracted your build output (as described below) first, or build to another folder and turn off all of the other options.
 
 # Final Steps #
+
 ## Build Output ##
+
 The various files required for the Vulkan SDK can be found inside the build directory, specified by using the -B flag with cmake.
 Extract the downloadable SDK to get the include files, as well as the json files for the various layers. *(You can also find these inside the source directories)*
 
 ## Environment Configuration ##
+
 You will need to set the following environment variables to be able to use the various aspects of the SDK:
 
 |Variable|Action|Value|
