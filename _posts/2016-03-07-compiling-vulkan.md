@@ -77,7 +77,7 @@ Finally we're on to the main point of the article. The compilation itself is fai
 
 Once compilation of both projects finish, you can find the various binaries inside the build folders of `Vulkan-LoaderAndValidationTools`, `VulkanTools`, `spirv-tools` and `glslang` as described in the next section.
 
-*Note that if you opted not to build the demos, the vulkaninfo app/program will not be available for you to use for testing. This is quite useful as it prints out the Vulkan configuration and details for your system, and can be useful as a vulkan equivalent of dxdiag, or even to test if your layers are installed correctly.
+*Note that if you opted not to build the demos, the vulkaninfo app/program will not be available for you to use for testing. This is quite useful as it prints out the Vulkan configuration and details for your system, and can be useful as a vulkan equivalent of dxdiag, or even to test if your layers are installed correctly.*
 
 To compile this, just build the demos by re-running cmake without the -DBUILD_DEMOS=off flag. However make sure you have extracted your build output (as described below) first, or build to another folder and turn off all of the other options.
 
