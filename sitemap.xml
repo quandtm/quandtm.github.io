@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://mquandt.com/2016/03/07/Compiling-Vulkan-from-Scratch.html/</loc>
+    <lastmod>2016-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/2014/10/02/My-Unity-Porting-Toolkit.html/</loc>
+    <lastmod>2014-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/2014/09/23/Mastering-Unity-2D-Game-Development-Review.html/</loc>
+    <lastmod>2014-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/2014/06/05/Xbox-One-Dev-at-GDC.html/</loc>
+    <lastmod>2014-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8/Win8.html/</loc>
+    <lastmod>2014-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/2014/02/10/Review---Direct3D-Rendering-Cookbook.html/</loc>
+    <lastmod>2014-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/</loc>
+    <lastmod>2016-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/post/</loc>
+    <lastmod>2016-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mquandt.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
