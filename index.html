@@ -16,7 +16,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Michael Quandt" />
 
-  <meta name="generator" content="Hugo 0.27.1" />
+  <meta name="generator" content="Hugo 0.36" />
   <link rel="canonical" href="http://mquandt.com/" />
   <link rel="alternate" href="http://mquandt.com/index.xml" type="application/rss+xml" title="Michael Quandt">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -157,6 +157,28 @@
 
         <div class="posts-list">
           
+          
+            <article class="post-preview">
+              <a href="http://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API.html/">
+                <h2 class="post-title">Hidden Overloads in the CUDA Driver API</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on February 21, 2018
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.
+                  <a href="http://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API.html/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+            </article>
           
             <article class="post-preview">
               <a href="http://mquandt.com/2016/03/07/Compiling-Vulkan-from-Scratch.html/">
@@ -361,7 +383,7 @@ One of the areas I avoided covering in too much detail in my book was the area o
           
           
           &nbsp;&bull;&nbsp;
-          2016
+          2018
 
           
             &nbsp;&bull;&nbsp;
@@ -370,7 +392,7 @@ One of the areas I avoided covering in too much detail in my book was the area o
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.27.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.36</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
         </p>
       </div>

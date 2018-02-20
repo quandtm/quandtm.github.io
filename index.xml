@@ -8,10 +8,19 @@
     <language>en</language>
     <managingEditor>michael@mquandt.com (Michael Quandt)</managingEditor>
     <webMaster>michael@mquandt.com (Michael Quandt)</webMaster>
-    <lastBuildDate>Mon, 07 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Feb 2018 09:30:00 +1100</lastBuildDate>
     
 	<atom:link href="http://mquandt.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hidden Overloads in the CUDA Driver API</title>
+      <link>http://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API.html/</link>
+      <pubDate>Wed, 21 Feb 2018 09:30:00 +1100</pubDate>
+      <author>michael@mquandt.com (Michael Quandt)</author>
+      <guid>http://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API.html/</guid>
+      <description>We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &amp;gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.</description>
+    </item>
     
     <item>
       <title>Compiling Vulkan from Scratch</title>
