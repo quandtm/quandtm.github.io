@@ -5,24 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>NGUI Touch Input Issues (WP8/Win8)</title>
-  <meta property="og:title" content="NGUI Touch Input Issues (WP8/Win8)" />
-  <meta name="twitter:title" content="NGUI Touch Input Issues (WP8/Win8)" />
-  <meta name="description" content="NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.
-When converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.">
-  <meta property="og:description" content="NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.
-When converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.">
-  <meta name="twitter:description" content="NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I …">
+  <title>Cuda</title>
+  <meta property="og:title" content="Cuda" />
+  <meta name="twitter:title" content="Cuda" />
   <meta name="author" content="Michael Quandt"/>
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
-  <meta property="og:url" content="https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8/Win8.html/" />
+  <meta property="og:url" content="https://mquandt.com/tags/cuda/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Michael Quandt" />
 
   <meta name="generator" content="Hugo 0.49" />
-  <link rel="canonical" href="https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8/Win8.html/" />
+  <link rel="canonical" href="https://mquandt.com/tags/cuda/" />
   <link rel="alternate" href="https://mquandt.com/index.xml" type="application/rss+xml" title="Michael Quandt">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -121,33 +116,14 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
 
 
     
-  
-  
-  
-
-
-
-
-  
-
   <header class="header-section ">
-    
     <div class="intro-header no-img">
-      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-heading">
-              <h1>NGUI Touch Input Issues (WP8/Win8)</h1>
-                
-                
-                  <span class="post-meta">
-  Posted on May 22, 2014
-  
-</span>
-
-
-                
+            <div class="page-heading">
+              <h1>#Cuda</h1>
+              <hr class="small">
             </div>
           </div>
         </div>
@@ -155,52 +131,49 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
     </div>
   </header>
 
-
     
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-        <p>NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.</p>
-
-<p>When converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.</p>
-
-<p>To resolve this you just need to add a small delay check to ensure it doesn&rsquo;t fire twice. (This is known as <em>debouncing</em> in electronics)</p>
-
-<pre><code class="language-csharp">private float _prevPress;
-void OnClick()
-{  
-    if (Time.realtimeSinceStartup &lt; (_prevPress + 0.15f))
-        return;
-    else
-        _prevPress = Time.realtimeSinceStartup;
-    
-    // Handle the click here
-}
-</code></pre>
-
-<p>You can add this to the button with the problem, or integrate this into UIButton in NGUI to cover all buttons.</p>
-
-      </article>
-
-      <ul class="pager blog-pager">
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
-          <li class="previous">
-            <a href="https://mquandt.com/2014/02/10/Review---Direct3D-Rendering-Cookbook.html/" data-toggle="tooltip" data-placement="top" title="Review - Direct3D Rendering Cookbook">&larr; Previous Post</a>
-          </li>
-        
-        
-          <li class="next">
-            <a href="https://mquandt.com/2014/06/05/Xbox-One-Dev-at-GDC.html/" data-toggle="tooltip" data-placement="top" title="Xbox One Dev at GDC">Next Post &rarr;</a>
-          </li>
-        
-      </ul>
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API.html/">
+                <h2 class="post-title">Hidden Overloads in the CUDA Driver API</h2>
 
-      
+                
+              </a>
 
+              <p class="post-meta">
+                Posted on February 21, 2018
+              </p>
+              <div class="post-entry">
+                
+                  We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.
+                  <a href="https://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API.html/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://mquandt.comtags/cuda/">cuda</a>&nbsp;
+                  
+                    #<a href="https://mquandt.comtags/gpgpu/">gpgpu</a>&nbsp;
+                  
+                    #<a href="https://mquandt.comtags/tips/">tips</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+        </div>
+        
+      </div>
     </div>
   </div>
-</div>
 
     <footer>
   <div class="container">
