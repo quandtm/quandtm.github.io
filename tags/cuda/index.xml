@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cuda on Michael Quandt</title>
+    <title>cuda on Michael Quandt</title>
     <link>https://mquandt.com/tags/cuda/</link>
-    <description>Recent content in Cuda on Michael Quandt</description>
+    <description>Recent content in cuda on Michael Quandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>michael@mquandt.com (Michael Quandt)</managingEditor>

@@ -74,10 +74,10 @@ I was recently given a copy of the book to read through and provide my thoughts 
     
     <item>
       <title>NGUI Touch Input Issues (WP8/Win8)</title>
-      <link>https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8-Win8.html/</link>
+      <link>https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8/Win8.html/</link>
       <pubDate>Thu, 22 May 2014 00:00:00 +0000</pubDate>
       <author>michael@mquandt.com (Michael Quandt)</author>
-      <guid>https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8-Win8.html/</guid>
+      <guid>https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8/Win8.html/</guid>
       <description>NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.
 When converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.</description>
     </item>

@@ -3,12 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mquandt.com/tags/film/</loc>
+    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mquandt.com/tags/games/</loc>
+    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mquandt.com/2019/01/01/Lego-Rabbits-Superheroes-and-the-Future.html/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
   </url>
   
   <url>
+    <loc>https://mquandt.com/</loc>
+    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mquandt.com/post/</loc>
+    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mquandt.com/tags/</loc>
+    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mquandt.com/tags/vfx/</loc>
+    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mquandt.com/tags/work/</loc>
+    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mquandt.com/tags/cuda/</loc>
+    <lastmod>2018-02-21T09:30:00+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mquandt.com/tags/gpgpu/</loc>
+    <lastmod>2018-02-21T09:30:00+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API.html/</loc>
+    <lastmod>2018-02-21T09:30:00+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mquandt.com/tags/tips/</loc>
     <lastmod>2018-02-21T09:30:00+11:00</lastmod>
   </url>
   
@@ -33,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8-Win8.html/</loc>
+    <loc>https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8/Win8.html/</loc>
     <lastmod>2014-05-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -44,67 +94,6 @@
   
   <url>
     <loc>https://mquandt.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/tags/cuda/</loc>
-    <lastmod>2018-02-21T09:30:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/tags/film/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/tags/games/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/tags/gpgpu/</loc>
-    <lastmod>2018-02-21T09:30:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/post/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/tags/</loc>
-    <lastmod>2018-02-21T09:30:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/tags/tips/</loc>
-    <lastmod>2018-02-21T09:30:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/tags/vfx/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mquandt.com/tags/work/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
