@@ -7,8 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Hidden Overloads in the CUDA Driver API - Michael Quandt</title>
-  <meta name="description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.">
+  <title>Lego, Rabbits, Superheroes and the Future - Michael Quandt</title>
+  <meta name="description" content="Normally I might write a post about the year that passed and what&rsquo;s coming for 2019, but considering the lack of content that I&rsquo;ve been able to write about this year, I should probably pick a larger timeframe.
+In October of 2014 I joined a little animation company here in Sydney named Animal Logic. Earlier that year they released a film that caught the world by surprise: The Lego Movie.">
   <meta name="author" content="Michael Quandt"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +45,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/mquandt.com\/2018\/02\/21\/Hidden-Overloads-in-the-CUDA-Driver-API.html\/",
-          "name": "Hidden overloads in the c u d a driver a p i"
+          "@id": "https:\/\/mquandt.com\/2019\/01\/01\/Lego-Rabbits-Superheroes-and-the-Future\/",
+          "name": "Lego, rabbits, superheroes and the future"
         }
     }]
 }
@@ -56,15 +57,15 @@
   "author": {
     "name" : "Michael Quandt"
   },
-  "headline": "Hidden Overloads in the CUDA Driver API",
-  "description" : "We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had \x26gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.",
+  "headline": "Lego, Rabbits, Superheroes and the Future",
+  "description" : "Normally I might write a post about the year that passed and what\x26rsquo;s coming for 2019, but considering the lack of content that I\x26rsquo;ve been able to write about this year, I should probably pick a larger timeframe.\nIn October of 2014 I joined a little animation company here in Sydney named Animal Logic. Earlier that year they released a film that caught the world by surprise: The Lego Movie.",
   "inLanguage" : "en",
-  "wordCount":  148 ,
-  "datePublished" : "2018-02-21T09:30:00",
-  "dateModified" : "2018-02-21T09:30:00",
+  "wordCount":  450 ,
+  "datePublished" : "2019-01-01T02:29:00",
+  "dateModified" : "2019-01-01T02:29:00",
   "image" : "https:\/\/mquandt.com",
-  "keywords" : [ "cuda, gpgpu, tips" ],
-  "mainEntityOfPage" : "https:\/\/mquandt.com\/2018\/02\/21\/Hidden-Overloads-in-the-CUDA-Driver-API.html\/",
+  "keywords" : [ "work, film, vfx, games" ],
+  "mainEntityOfPage" : "https:\/\/mquandt.com\/2019\/01\/01\/Lego-Rabbits-Superheroes-and-the-Future\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/mquandt.com",
@@ -78,14 +79,15 @@
 }
 </script>
 
-<meta property="og:title" content="Hidden Overloads in the CUDA Driver API" />
-<meta property="og:description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.">
-<meta property="og:url" content="https://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API.html/" />
+<meta property="og:title" content="Lego, Rabbits, Superheroes and the Future" />
+<meta property="og:description" content="Normally I might write a post about the year that passed and what&rsquo;s coming for 2019, but considering the lack of content that I&rsquo;ve been able to write about this year, I should probably pick a larger timeframe.
+In October of 2014 I joined a little animation company here in Sydney named Animal Logic. Earlier that year they released a film that caught the world by surprise: The Lego Movie.">
+<meta property="og:url" content="https://mquandt.com/2019/01/01/Lego-Rabbits-Superheroes-and-the-Future/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Michael Quandt" />
 
-  <meta name="twitter:title" content="Hidden Overloads in the CUDA Driver API" />
-  <meta name="twitter:description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit …">
+  <meta name="twitter:title" content="Lego, Rabbits, Superheroes and the Future" />
+  <meta name="twitter:description" content="Normally I might write a post about the year that passed and what&rsquo;s coming for 2019, but considering the lack of content that I&rsquo;ve been able to write about this year, I should probably …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
@@ -197,7 +199,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Hidden Overloads in the CUDA Driver API</h1>
+                <h1>Lego, Rabbits, Superheroes and the Future</h1>
               
               
               
@@ -205,7 +207,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 21, 2018
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 2019
   
   
   
@@ -232,25 +234,49 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime.
-One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer.
-On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.</p>
+        <p>Normally I might write a post about the year that passed and what&rsquo;s coming for 2019, but considering the lack of content that I&rsquo;ve been able to write about this year, I should probably pick a larger timeframe.</p>
 
-<p>After lots of searching we found mention of an old API with the same name, just different parameters.
-That led to a check of the exported symbols and discovery of a &ldquo;v2&rdquo; function.
-Using that name led to the correct behaviour with our existing code.</p>
+<p>In October of 2014 I joined a little animation company here in Sydney named Animal Logic. Earlier that year they released a film that caught the world by surprise: The Lego Movie.</p>
 
-<p>As far as I could see this isn&rsquo;t documented in any official location, and the functions are exposed in the header using their original name.</p>
+<p>But how did I get there?</p>
+
+<p>I&rsquo;ve always loved those little featurettes that lift the cover on the creation of a movie or game. Getting to see how something was made (even if it was a carefully choreographed marketing piece) inspired me to pursue game development - to join those teams and make something awesome.</p>
+
+<p><img src="peter_rabbit_al_2018.jpg" alt="Peter Rabbit" /></p>
+
+<p>In 2014 I was working on converting mobile games to the Windows platform for a number of high profile clients. But conversion work is a little thankless (it tends to be uncredited) and creativity isn&rsquo;t really the focus there.</p>
+
+<p>On a whim one night I decided to try for Animal Logic. A week later and I&rsquo;m in an interview here in the Sydney studio. Not too long after that I&rsquo;m walking through the doors again, this time as a new employee of the Research and Development group.</p>
+
+<p>I was working in film which was new to me, but I could finally contribute to the creation of an animated feature film using the knowledge gained working on software and games.</p>
+
+<p>Over the last four years I&rsquo;ve had the chance to work with an amazing team and produce three Lego movies (Batman, Ninjago and The Second Part) as well as a live-action hybrid version of a tale I read as a child: Peter Rabbit.</p>
+
+<p>Mix in many smaller VFX projects for films such as Avengers 2 or Captain America: Civil War (I&rsquo;m technically in one scene, hidden in the darkness!) and I&rsquo;ve had the pleasure of being involved in the creation of some great technology that has allowed some great films to be created.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube-nocookie.com/embed/cksYkEzUa7k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>With the amazing experiences and new knowledge I&rsquo;ve gained at Animal Logic, it is time to part ways and explore something new.</p>
+
+<p>In 2019 I will be joining Frontier Developments in Cambridge UK as a Principal Animation Programmer. I&rsquo;ll be working with their current engine and animation teams to figure out what&rsquo;s next for animation on upcoming titles.</p>
+
+<p>I&rsquo;m looking forward to the move and new challenges that await. While I am sad to depart Animal Logic, I know they have some great tech behind them and are set for success in the coming years. I&rsquo;ll be watching and enjoying their work when it appears in cinemas instead of as an early animatic.</p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mquandt.com/tags/cuda/">cuda</a>&nbsp;
+              <a href="https://mquandt.com/tags/work/">work</a>&nbsp;
             
-              <a href="https://mquandt.com/tags/gpgpu/">gpgpu</a>&nbsp;
+              <a href="https://mquandt.com/tags/film/">film</a>&nbsp;
             
-              <a href="https://mquandt.com/tags/tips/">tips</a>&nbsp;
+              <a href="https://mquandt.com/tags/vfx/">vfx</a>&nbsp;
+            
+              <a href="https://mquandt.com/tags/games/">games</a>&nbsp;
             
           </div>
         
@@ -264,13 +290,9 @@ Using that name led to the correct behaviour with our existing code.</p>
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mquandt.com/2016/03/07/Compiling-Vulkan-from-Scratch.html/" data-toggle="tooltip" data-placement="top" title="Compiling Vulkan from Scratch">&larr; Previous Post</a>
+              <a href="https://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API/" data-toggle="tooltip" data-placement="top" title="Hidden Overloads in the CUDA Driver API">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://mquandt.com/2019/01/01/Lego-Rabbits-Superheroes-and-the-Future.html/" data-toggle="tooltip" data-placement="top" title="Lego, Rabbits, Superheroes and the Future">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

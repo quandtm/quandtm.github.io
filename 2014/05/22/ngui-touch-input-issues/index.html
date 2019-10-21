@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>My Unity Porting Toolkit - Michael Quandt</title>
-  <meta name="description" content="Over the last year and a half I&rsquo;ve been involved in porting many games over to the Windows (tablet/desktop) and Phone platforms with Marker Metro. (Some examples in my portfolio)
-While doing this I have built up a small set of invaluable tools to assist with the task. I decided I should probably post this small list up in case some of these are new to anyone out there.">
+  <title>NGUI Touch Input Issues (WP8/Win8) - Michael Quandt</title>
+  <meta name="description" content="NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.
+When converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.">
   <meta name="author" content="Michael Quandt"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -45,8 +45,8 @@ While doing this I have built up a small set of invaluable tools to assist with 
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/mquandt.com\/2014\/10\/02\/My-Unity-Porting-Toolkit.html\/",
-          "name": "My unity porting toolkit"
+          "@id": "https:\/\/mquandt.com\/2014\/05\/22\/ngui-touch-input-issues\/",
+          "name": "N g u i touch input issues ( w p8\/ win8)"
         }
     }]
 }
@@ -57,15 +57,15 @@ While doing this I have built up a small set of invaluable tools to assist with 
   "author": {
     "name" : "Michael Quandt"
   },
-  "headline": "My Unity Porting Toolkit",
-  "description" : "Over the last year and a half I\x26rsquo;ve been involved in porting many games over to the Windows (tablet\/desktop) and Phone platforms with Marker Metro. (Some examples in my portfolio)\nWhile doing this I have built up a small set of invaluable tools to assist with the task. I decided I should probably post this small list up in case some of these are new to anyone out there.",
+  "headline": "NGUI Touch Input Issues (WP8\/Win8)",
+  "description" : "NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.\nWhen converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.",
   "inLanguage" : "en",
-  "wordCount":  591 ,
-  "datePublished" : "2014-10-02T00:00:00",
-  "dateModified" : "2014-10-02T00:00:00",
+  "wordCount":  157 ,
+  "datePublished" : "2014-05-22T00:00:00",
+  "dateModified" : "2014-05-22T00:00:00",
   "image" : "https:\/\/mquandt.com",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https:\/\/mquandt.com\/2014\/10\/02\/My-Unity-Porting-Toolkit.html\/",
+  "mainEntityOfPage" : "https:\/\/mquandt.com\/2014\/05\/22\/ngui-touch-input-issues\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/mquandt.com",
@@ -79,16 +79,15 @@ While doing this I have built up a small set of invaluable tools to assist with 
 }
 </script>
 
-<meta property="og:title" content="My Unity Porting Toolkit" />
-<meta property="og:description" content="Over the last year and a half I&rsquo;ve been involved in porting many games over to the Windows (tablet/desktop) and Phone platforms with Marker Metro. (Some examples in my portfolio)
-While doing this I have built up a small set of invaluable tools to assist with the task. I decided I should probably post this small list up in case some of these are new to anyone out there.">
-<meta property="og:url" content="https://mquandt.com/2014/10/02/My-Unity-Porting-Toolkit.html/" />
+<meta property="og:title" content="NGUI Touch Input Issues (WP8/Win8)" />
+<meta property="og:description" content="NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.
+When converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.">
+<meta property="og:url" content="https://mquandt.com/2014/05/22/ngui-touch-input-issues/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Michael Quandt" />
 
-  <meta name="twitter:title" content="My Unity Porting Toolkit" />
-  <meta name="twitter:description" content="Over the last year and a half I&rsquo;ve been involved in porting many games over to the Windows (tablet/desktop) and Phone platforms with Marker Metro. (Some examples in my portfolio)
-While doing …">
+  <meta name="twitter:title" content="NGUI Touch Input Issues (WP8/Win8)" />
+  <meta name="twitter:description" content="NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
@@ -200,7 +199,7 @@ While doing …">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>My Unity Porting Toolkit</h1>
+                <h1>NGUI Touch Input Issues (WP8/Win8)</h1>
               
               
               
@@ -208,7 +207,7 @@ While doing …">
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 2, 2014
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 22, 2014
   
   
   
@@ -235,37 +234,23 @@ While doing …">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
+        <p>NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.</p>
 
-<p>Over the last year and a half I&rsquo;ve been involved in porting many games over to the Windows (tablet/desktop) and Phone platforms with <a href="http://markermetro.com/">Marker Metro</a>. (Some examples in my <a href="http://mquandt.com/portfolio.html">portfolio</a>)</p>
+<p>When converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.</p>
 
-<p>While doing this I have built up a small set of invaluable tools to assist with the task. I decided I should probably post this small list up in case some of these are new to anyone out there.</p>
-
-<h3 id="what-i-use">What I Use</h3>
-
-<ul>
-<li><a href="http://www.visualstudio.com/">Visual Studio 2013 Update 3</a> (Pro or higher required for plugins)</li>
-<li><a href="http://unityvs.com/">Visual Studio Tools for Unity</a> (aka UnityVS)</li>
-<li><a href="http://visualstudiogallery.msdn.microsoft.com/a1166718-a2d9-4a48-a5fd-504ff4ad1b65">Bing Developer Assistant</a></li>
-<li><a href="http://blogs.msdn.com/b/dotnet/archive/2014/08/06/leveraging-existing-code-across-net-platforms.aspx">.NET Portability Analyzer</a></li>
-<li><a href="http://www.nuget.org">NuGet</a> (Comes with Visual Studio 2013)</li>
-</ul>
-
-<p>So what do I use each of these for? Well Visual Studio is obvious, but the rest may not be, especially for developers not involved in the Microsoft development world.</p>
-
-<h3 id="what-are-these-things">What Are These Things?</h3>
-
-<p>Let&rsquo;s start with the <strong>Visual Studio Tools for Unity</strong> (UnityVS). This plugin comes in two parts, the extension for Visual Studio (2010/2012/2013) and a Unity Package that you add to your project. When combined this tool allows you to write your scripts using Visual Studio, and even debug in editor. But the big benefit that isn&rsquo;t mentioned, is the IDE support for scripts, even if you aren&rsquo;t working in the editor. Unity for Windows Store and Windows Phone allows developers to debug on device using Visual Studio, and to do that you need to add the MonoDevelop or UnityVS project to your solution. This plugin allows you to edit those scripts with full support in the IDE, making the edit &gt; rebuild &gt; run loop much faster.</p>
-
-<p>Next is the <strong>Bing Developer Assistant</strong>. This little extension provides inline code snippets from the web for APIs that you may want to use. When I say inline, I mean it includes them alongside your intellisense drop-down, making it really easy to figure out how you&rsquo;re supposed to use a new API. This is very important when porting games because you will spend a fair bit of time converting code to work with new APIs and many of them may be completely new to you. Save yourself some time searching for examples online by letting this extension find them for you.</p>
-
-<p>When you start work on a project, or are trying to evaluate the amount of work required, the <strong>.NET Portability Analyzer</strong> comes in handy. This little tool takes a look at your code and determines how much of it will <strong>just work</strong> on Windows 8. When it finds code that doesn&rsquo;t work, it will let you know so you can figure out how much work is required, or where you need to start. When combined with the porting guide and samples <a href="http://unity3d.com/pages/windows/porting">here</a> you can get off to a good start.</p>
-
-<p>Finally, if you haven&rsquo;t encountered NuGet before, I strongly encourage you to take a look. NuGet can be considered the apt-get (package manager) for development libraries. With NuGet I can easily find and download libraries as required, all from within Visual Studio, and better yet when I commit that to source control I only need to commit the package list - NuGet will handle re-downloading any packages that are missing during the build process.</p>
-
-<p>These are the main tools I use when working on a game conversion, and I strongly recommend each and every one of them.</p>
-
-<p>Do you have any extensions, tools, or plugins (Unity, Visual Studio, anything else?) that you use for game development or converting games. Let me know on twitter (<a href="https://www.twitter.com/quandtm">@quandtm</a>), because I&rsquo;m always looking for new tools to make the process easier.</p>
+<p>To resolve this you just need to add a small delay check to ensure it doesn&rsquo;t fire twice. (This is known as <em>debouncing</em> in electronics)</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="kt">float</span> <span class="n">_prevPress</span><span class="p">;</span>
+<span class="k">void</span> <span class="n">OnClick</span><span class="p">()</span>
+<span class="p">{</span>  
+    <span class="k">if</span> <span class="p">(</span><span class="n">Time</span><span class="p">.</span><span class="n">realtimeSinceStartup</span> <span class="p">&lt;</span> <span class="p">(</span><span class="n">_prevPress</span> <span class="p">+</span> <span class="m">0.15f</span><span class="p">))</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="k">else</span>
+        <span class="n">_prevPress</span> <span class="p">=</span> <span class="n">Time</span><span class="p">.</span><span class="n">realtimeSinceStartup</span><span class="p">;</span>
+    
+    <span class="c1">// Handle the click here
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div>
+<p>You can add this to the button with the problem, or integrate this into UIButton in NGUI to cover all buttons.</p>
 
 
         
@@ -279,12 +264,12 @@ While doing …">
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mquandt.com/2014/09/23/Mastering-Unity-2D-Game-Development-Review.html/" data-toggle="tooltip" data-placement="top" title="Mastering Unity 2D Game Development [Review]">&larr; Previous Post</a>
+              <a href="https://mquandt.com/2014/02/10/Review-Direct3D-Rendering-Cookbook/" data-toggle="tooltip" data-placement="top" title="Review - Direct3D Rendering Cookbook">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mquandt.com/2016/03/07/Compiling-Vulkan-from-Scratch.html/" data-toggle="tooltip" data-placement="top" title="Compiling Vulkan from Scratch">Next Post &rarr;</a>
+              <a href="https://mquandt.com/2014/06/05/Xbox-One-Dev-at-GDC/" data-toggle="tooltip" data-placement="top" title="Xbox One Dev at GDC">Next Post &rarr;</a>
             </li>
           
         </ul>

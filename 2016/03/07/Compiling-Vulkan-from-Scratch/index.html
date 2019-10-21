@@ -7,8 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Xbox One Dev at GDC - Michael Quandt</title>
-  <meta name="description" content="One of the things I&rsquo;ve been meaning to do recently is post about the ID@Xbox presentations that were on at GDC this year. Quite a lot of information was provided outside of the standard NDA that people have to sign at the official ID@Xbox events and so I thought that I should put this information online somewhere so that others can find out what was presented. (The sessions were not recorded) I did not attend all sessions and so my notes are fairly incomplete and lack information about the Kinect and LIVE SDK.">
+  <title>Compiling Vulkan from Scratch - Michael Quandt</title>
+  <meta name="description" content="Introduction &amp; Motivation Works for SDK version 1.0.3
+A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.
+At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest.">
   <meta name="author" content="Michael Quandt"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +46,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/mquandt.com\/2014\/06\/05\/Xbox-One-Dev-at-GDC.html\/",
-          "name": "Xbox one dev at g d c"
+          "@id": "https:\/\/mquandt.com\/2016\/03\/07\/Compiling-Vulkan-from-Scratch\/",
+          "name": "Compiling vulkan from scratch"
         }
     }]
 }
@@ -56,15 +58,15 @@
   "author": {
     "name" : "Michael Quandt"
   },
-  "headline": "Xbox One Dev at GDC",
-  "description" : "One of the things I\x26rsquo;ve been meaning to do recently is post about the ID@Xbox presentations that were on at GDC this year. Quite a lot of information was provided outside of the standard NDA that people have to sign at the official ID@Xbox events and so I thought that I should put this information online somewhere so that others can find out what was presented. (The sessions were not recorded) I did not attend all sessions and so my notes are fairly incomplete and lack information about the Kinect and LIVE SDK.",
+  "headline": "Compiling Vulkan from Scratch",
+  "description" : "Introduction \x26amp; Motivation Works for SDK version 1.0.3\nA few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.\nAt Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest.",
   "inLanguage" : "en",
-  "wordCount":  593 ,
-  "datePublished" : "2014-06-05T00:00:00",
-  "dateModified" : "2014-06-05T00:00:00",
+  "wordCount":  931 ,
+  "datePublished" : "2016-03-07T00:00:00",
+  "dateModified" : "2016-03-07T00:00:00",
   "image" : "https:\/\/mquandt.com",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https:\/\/mquandt.com\/2014\/06\/05\/Xbox-One-Dev-at-GDC.html\/",
+  "mainEntityOfPage" : "https:\/\/mquandt.com\/2016\/03\/07\/Compiling-Vulkan-from-Scratch\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/mquandt.com",
@@ -78,14 +80,17 @@
 }
 </script>
 
-<meta property="og:title" content="Xbox One Dev at GDC" />
-<meta property="og:description" content="One of the things I&rsquo;ve been meaning to do recently is post about the ID@Xbox presentations that were on at GDC this year. Quite a lot of information was provided outside of the standard NDA that people have to sign at the official ID@Xbox events and so I thought that I should put this information online somewhere so that others can find out what was presented. (The sessions were not recorded) I did not attend all sessions and so my notes are fairly incomplete and lack information about the Kinect and LIVE SDK.">
-<meta property="og:url" content="https://mquandt.com/2014/06/05/Xbox-One-Dev-at-GDC.html/" />
+<meta property="og:title" content="Compiling Vulkan from Scratch" />
+<meta property="og:description" content="Introduction &amp; Motivation Works for SDK version 1.0.3
+A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.
+At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest.">
+<meta property="og:url" content="https://mquandt.com/2016/03/07/Compiling-Vulkan-from-Scratch/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Michael Quandt" />
 
-  <meta name="twitter:title" content="Xbox One Dev at GDC" />
-  <meta name="twitter:description" content="One of the things I&rsquo;ve been meaning to do recently is post about the ID@Xbox presentations that were on at GDC this year. Quite a lot of information was provided outside of the standard NDA that …">
+  <meta name="twitter:title" content="Compiling Vulkan from Scratch" />
+  <meta name="twitter:description" content="Introduction &amp; Motivation Works for SDK version 1.0.3
+A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
@@ -197,7 +202,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Xbox One Dev at GDC</h1>
+                <h1>Compiling Vulkan from Scratch</h1>
               
               
               
@@ -205,7 +210,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on June 5, 2014
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 7, 2016
   
   
   
@@ -234,64 +239,124 @@
       <article role="main" class="blog-post">
         
 
-<p>One of the things I&rsquo;ve been meaning to do recently is post about the ID@Xbox presentations that were on at GDC this year. Quite a lot of information was provided outside of the standard NDA that people have to sign at the official ID@Xbox events and so I thought that I should put this information online somewhere so that others can find out what was presented. (The sessions were not recorded) I did not attend all sessions and so my notes are fairly incomplete and lack information about the Kinect and LIVE SDK.</p>
+<h1 id="introduction-motivation">Introduction &amp; Motivation</h1>
 
-<p>This post is effectively a dump of my notes. Short and sweet. As far as I&rsquo;m aware, the information is still correct at the time of writing. At the very least the information was correct at GDC.</p>
+<p><em>Works for SDK version 1.0.3</em></p>
 
-<p>The spec available to developers on the Xbox is:</p>
+<p>A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the <a href="http://vulkan.lunarg.com">Official Website</a>.</p>
+
+<p>At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest. This however means that our version of GLIBC is older than what you may find in more recent Ubuntu installs, which LunarG targetted for the Linux SDK.</p>
+
+<p>Thankfully the open nature of Vulkan and Khronos means the source code we care about, for the loader and tools, is provided on Github. This means that we can compile the files ourselves.</p>
+
+<h1 id="loaders-and-layers">Loaders and Layers</h1>
+
+<p>First lets take a quick look at some design decisions, which may inform what you want to compile and use.</p>
+
+<p>To allow for extension in future, Vulkan adopts the extension model that OpenGL has used successfully over its many years. IHVs can provide implementations of extensions that are experimental or unique to their hardware, and ISVs can detect if these exist and use the new functionality without requiring a new version of OpenGL (or in this case Vulkan).</p>
+
+<p>Vulkan has gone a step further by defining a layer system that allows the developer to add layers between their application and the underlying driver implementation. These layers enable powerful new development and debugging options without requiring intrusive changes to the application or driver code.</p>
+
+<p>These two elements are connected and powered by the Vulkan loader (libvulkan.so on Linux and Vulkan-1.dll on Windows). This loader provides the base API spec as well as the function pointer discovery required for extensions. This is the main thing we need to build to use Vulkan on a system with a different version of GLIBC, and this is the only thing we need to run Vulkan with its base specifications. If we want to enable the use of GLSL, or the debugging layers, then we will need to compile some other tools which will fill out what the SDK normally provides.</p>
+
+<h1 id="requirements">Requirements</h1>
 
 <ul>
-<li>5GB for Games</li>
-<li>6 logical cores (4 dedicated, #5 &amp; #6 share cache with OS)
-
-<ul>
-<li>Quad-core CPU - 2 logical cores/threads per physical core</li>
-</ul></li>
-<li>DX11.1 level GPU</li>
-<li>32MB ESRAM (similar to EDRAM in Xbox 360, but more)</li>
+<li>git</li>
+<li>python 3.x</li>
+<li>cmake</li>
+<li>clang 3.4+ (gcc may work however I have not tried this)</li>
 </ul>
 
-<h3 id="apis">APIs</h3>
+<h1 id="steps">Steps</h1>
 
-<h4 id="available">Available</h4>
+<h2 id="get-the-source">Get the Source</h2>
 
-<ul>
-<li>Direct3D 11.1 (with extensions)</li>
-<li>DXGI 1.2</li>
-<li>Custom Controller API (not XInput)</li>
-<li>HTML/JavaScript</li>
-</ul>
+<p>First clone the following repositories from github:
+<a href="https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers.git">https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers.git</a>
+<a href="https://github.com/LunarG/VulkanTools.git">https://github.com/LunarG/VulkanTools.git</a></p>
 
-<h4 id="unavailable">Unavailable</h4>
+<p>At the time of writing the latest SDK is 1.0.3. You will probably want to checkout the branch containing the latest SDK rather than master, so you have a stable release rather than something in development.</p>
 
-<ul>
-<li>Direct2D</li>
-<li>DirectWrite</li>
-<li>(Games Only) XAML</li>
-<li>(WinRT) Security</li>
-<li>(WinRT) Management</li>
-<li>(WinRT) Globalization</li>
-<li>(WinRT) Graphics</li>
-</ul>
+<h2 id="update-build-dependencies">Update &amp; Build Dependencies</h2>
 
-<p>All code is x64, and by default you use 16 byte alignment.</p>
+<p>Inside Vulkan-LoaderAndValidationLayers, run <code>./update_external_sources.sh</code></p>
 
-<p>There are two modes, full and constrained. If you have used an Xbox One, constrained mode is when your game/app runs inside the main tile on the dashboard. When in this mode you receive less resources as cores 5 &amp; 6 are folded into cores 3 &amp; 4, so you can continue to use the same code however 3 &amp; 4 will have much higher contention. Cores 1 &amp; 2 will always be safe and dedicated.</p>
+<p>This will download the repositories the loader and validation layers require (SPIR-V etc) and compile them, so ensure that clang, cmake and python are in your path.</p>
 
-<h3 id="distribution">Distribution</h3>
+<p>Once this is done, move to the VulkanTools repository and do the same.</p>
 
-<p>This is a small section, however a quick note for those who know how Windows 8 handles AppX packages and distribution.
-The Xbox One deploys each game with a copy of the operating system, similar to how previous generations of consoles have handled things. This allows games to ship with a specific version and run in an environment they have tested for. This way future changes won&rsquo;t break the game.
-To handle the size for updates, the AppX is generated in a chunked format to allow for the early play feature, as well as differential updates to reduce the update size for players, and during development.
-Alongside this, during development you can &ldquo;stream&rdquo; the game from your development PC. This of course requires a continuous connection to the PC, however it reduces iteration time when debugging. If you want to disconnect the Xbox and take it somewhere (to show off your game or play it without a dev PC connected) you can deploy the entire game package, however this will take much longer.</p>
+<h2 id="cmake-configuration-compilation">CMAKE Configuration &amp; Compilation</h2>
 
-<h3 id="tools">Tools</h3>
+<p>This article focuses on GLIBC 2.12, however it should apply to most versions, and this is probably the section that will differ the most, so please test and remember that your mileage may vary.</p>
 
-<p>As of GDC, development was done with Visual Studio 2012 and a special version of PIX is included for debugging and profiling on the console. Development is done in a simiar fashion to Windows 8 development on a remote machine. Companion apps can be developed in a similar way however these use the VS Graphics Debugger instead. The XDK offers a new graphics context named <em>ID3DXboxPerformanceContext</em> which has Xbox specific extensions that can be used. Everything else is Direct3D 11.1.</p>
+<p>In 2.12 the string format macros are not globally defined, as the SDK expects. If you see any errors that require macros such as PRIx64, just add the following lines to the CMakeLists.txt file in both of the repositories you cloned:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmake" data-lang="cmake"><span class="nb">add_definitions</span><span class="p">(</span><span class="s">-D__STDC_FORMAT_MACROS</span><span class="p">)</span></code></pre></div>
+<p>This line will enable those macros. You may also want to disable compilation of vkjson_info and the demos as some of them require the alignedmalloc function that was addded to a more recentl glibc (but which is missing from 2.12). To do this, just add -DBUILD_DEMOS_off and -DBUILD_VKJSON=off to the cmake command line we will execute later. These aren&rsquo;t required to use the SDK, however you may want to build them just to complete the SDK (where possible).</p>
 
-<h3 id="changes-disclaimer">Changes/Disclaimer</h3>
+<p><strong>Vulkan-LoaderAndValidationLayers</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off</code></pre></div>
+<p><strong>VulkanTools</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off -DBUILD_LOADER<span class="o">=</span>off -DBUILD_LAYERS<span class="o">=</span>off</code></pre></div>
+<p>The following build types are available:
+* Debug
+* RelWithDebInfo
+* Release</p>
 
-<p>At the time of writing, Phil Spencer just announced changes and updates to the XDK that improve development and performance. As a result we can see that the tools are changing and improving over time, so parts of this post may no longer be valid.</p>
+<p>Finally we&rsquo;re on to the main point of the article. The compilation itself is fairly straightforward, just navigate to the build directory and call make. Remeber you can pass the <code>-j &lt;number&gt;</code> argument to thread the compilation.</p>
+
+<p>Once compilation of both projects finish, you can find the various binaries inside the build folders of <code>Vulkan-LoaderAndValidationTools</code>, <code>VulkanTools</code>, <code>spirv-tools</code> and <code>glslang</code> as described in the next section.</p>
+
+<p><em>Note that if you opted not to build the demos, the vulkaninfo app/program will not be available for you to use for testing. This is quite useful as it prints out the Vulkan configuration and details for your system, and can be useful as a vulkan equivalent of dxdiag, or even to test if your layers are installed correctly.</em></p>
+
+<p>To compile this, just build the demos by re-running cmake without the -DBUILD_DEMOS=off flag. However make sure you have extracted your build output (as described below) first, or build to another folder and turn off all of the other options.</p>
+
+<h1 id="final-steps">Final Steps</h1>
+
+<h2 id="build-output">Build Output</h2>
+
+<p>The various files required for the Vulkan SDK can be found inside the build directory, specified by using the -B flag with cmake.
+Extract the downloadable SDK to get the include files, as well as the json files for the various layers. <em>(You can also find these inside the source directories)</em></p>
+
+<h2 id="environment-configuration">Environment Configuration</h2>
+
+<p>You will need to set the following environment variables to be able to use the various aspects of the SDK:</p>
+
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Action</th>
+<th>Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>LD_LIBRARY_PATH</td>
+<td>Append</td>
+<td>&lt;root&gt;/lib</td>
+</tr>
+
+<tr>
+<td>PATH</td>
+<td>Append</td>
+<td>&lt;root&gt;/bin</td>
+</tr>
+
+<tr>
+<td>VK_LAYER_PATH</td>
+<td>Set</td>
+<td>&lt;root&gt;/lib/vulkan/layer</td>
+</tr>
+
+<tr>
+<td>VULKAN_SDK</td>
+<td>Set</td>
+<td>&lt;root&gt;</td>
+</tr>
+</tbody>
+</table>
 
 
         
@@ -305,12 +370,12 @@ Alongside this, during development you can &ldquo;stream&rdquo; the game from yo
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mquandt.com/2014/05/22/NGUI-Touch-Input-Issues-WP8/Win8.html/" data-toggle="tooltip" data-placement="top" title="NGUI Touch Input Issues (WP8/Win8)">&larr; Previous Post</a>
+              <a href="https://mquandt.com/2014/10/02/My-Unity-Porting-Toolkit/" data-toggle="tooltip" data-placement="top" title="My Unity Porting Toolkit">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mquandt.com/2014/09/23/Mastering-Unity-2D-Game-Development-Review.html/" data-toggle="tooltip" data-placement="top" title="Mastering Unity 2D Game Development [Review]">Next Post &rarr;</a>
+              <a href="https://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API/" data-toggle="tooltip" data-placement="top" title="Hidden Overloads in the CUDA Driver API">Next Post &rarr;</a>
             </li>
           
         </ul>
