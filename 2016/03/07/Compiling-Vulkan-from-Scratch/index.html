@@ -59,9 +59,9 @@ At Animal Logic we use an older version of CentOS that aligns with the VFX refer
     "name" : "Michael Quandt"
   },
   "headline": "Compiling Vulkan from Scratch",
-  "description" : "Introduction \x26amp; Motivation Works for SDK version 1.0.3\nA few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.\nAt Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest.",
+  "description" : "Introduction \u0026amp; Motivation Works for SDK version 1.0.3\nA few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.\nAt Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest.",
   "inLanguage" : "en",
-  "wordCount":  931 ,
+  "wordCount":  927 ,
   "datePublished" : "2016-03-07T00:00:00",
   "dateModified" : "2016-03-07T00:00:00",
   "image" : "https:\/\/mquandt.com",
@@ -94,7 +94,7 @@ A few weeks ago Vulkan 1.0 was released to the public, which marked the first ti
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.74.3" />
   <link rel="alternate" href="https://mquandt.com/index.xml" type="application/rss+xml" title="Michael Quandt"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://mquandt.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -237,91 +237,58 @@ A few weeks ago Vulkan 1.0 was released to the public, which marked the first ti
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<h1 id="introduction-motivation">Introduction &amp; Motivation</h1>
-
+        <h1 id="introduction--motivation">Introduction &amp; Motivation</h1>
 <p><em>Works for SDK version 1.0.3</em></p>
-
 <p>A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the <a href="http://vulkan.lunarg.com">Official Website</a>.</p>
-
 <p>At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest. This however means that our version of GLIBC is older than what you may find in more recent Ubuntu installs, which LunarG targetted for the Linux SDK.</p>
-
 <p>Thankfully the open nature of Vulkan and Khronos means the source code we care about, for the loader and tools, is provided on Github. This means that we can compile the files ourselves.</p>
-
 <h1 id="loaders-and-layers">Loaders and Layers</h1>
-
 <p>First lets take a quick look at some design decisions, which may inform what you want to compile and use.</p>
-
 <p>To allow for extension in future, Vulkan adopts the extension model that OpenGL has used successfully over its many years. IHVs can provide implementations of extensions that are experimental or unique to their hardware, and ISVs can detect if these exist and use the new functionality without requiring a new version of OpenGL (or in this case Vulkan).</p>
-
 <p>Vulkan has gone a step further by defining a layer system that allows the developer to add layers between their application and the underlying driver implementation. These layers enable powerful new development and debugging options without requiring intrusive changes to the application or driver code.</p>
-
 <p>These two elements are connected and powered by the Vulkan loader (libvulkan.so on Linux and Vulkan-1.dll on Windows). This loader provides the base API spec as well as the function pointer discovery required for extensions. This is the main thing we need to build to use Vulkan on a system with a different version of GLIBC, and this is the only thing we need to run Vulkan with its base specifications. If we want to enable the use of GLSL, or the debugging layers, then we will need to compile some other tools which will fill out what the SDK normally provides.</p>
-
 <h1 id="requirements">Requirements</h1>
-
 <ul>
 <li>git</li>
 <li>python 3.x</li>
 <li>cmake</li>
 <li>clang 3.4+ (gcc may work however I have not tried this)</li>
 </ul>
-
 <h1 id="steps">Steps</h1>
-
 <h2 id="get-the-source">Get the Source</h2>
-
 <p>First clone the following repositories from github:
 <a href="https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers.git">https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers.git</a>
 <a href="https://github.com/LunarG/VulkanTools.git">https://github.com/LunarG/VulkanTools.git</a></p>
-
 <p>At the time of writing the latest SDK is 1.0.3. You will probably want to checkout the branch containing the latest SDK rather than master, so you have a stable release rather than something in development.</p>
-
-<h2 id="update-build-dependencies">Update &amp; Build Dependencies</h2>
-
+<h2 id="update--build-dependencies">Update &amp; Build Dependencies</h2>
 <p>Inside Vulkan-LoaderAndValidationLayers, run <code>./update_external_sources.sh</code></p>
-
 <p>This will download the repositories the loader and validation layers require (SPIR-V etc) and compile them, so ensure that clang, cmake and python are in your path.</p>
-
 <p>Once this is done, move to the VulkanTools repository and do the same.</p>
-
-<h2 id="cmake-configuration-compilation">CMAKE Configuration &amp; Compilation</h2>
-
+<h2 id="cmake-configuration--compilation">CMAKE Configuration &amp; Compilation</h2>
 <p>This article focuses on GLIBC 2.12, however it should apply to most versions, and this is probably the section that will differ the most, so please test and remember that your mileage may vary.</p>
-
 <p>In 2.12 the string format macros are not globally defined, as the SDK expects. If you see any errors that require macros such as PRIx64, just add the following lines to the CMakeLists.txt file in both of the repositories you cloned:</p>
-<div class="highlight"><pre class="chroma"><code class="language-cmake" data-lang="cmake"><span class="nb">add_definitions</span><span class="p">(</span><span class="s">-D__STDC_FORMAT_MACROS</span><span class="p">)</span></code></pre></div>
-<p>This line will enable those macros. You may also want to disable compilation of vkjson_info and the demos as some of them require the alignedmalloc function that was addded to a more recentl glibc (but which is missing from 2.12). To do this, just add -DBUILD_DEMOS_off and -DBUILD_VKJSON=off to the cmake command line we will execute later. These aren&rsquo;t required to use the SDK, however you may want to build them just to complete the SDK (where possible).</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-cmake" data-lang="cmake"><span class="nb">add_definitions</span><span class="p">(</span><span class="s">-D__STDC_FORMAT_MACROS</span><span class="p">)</span><span class="err">
+</span></code></pre></div><p>This line will enable those macros. You may also want to disable compilation of vkjson_info and the demos as some of them require the alignedmalloc function that was addded to a more recentl glibc (but which is missing from 2.12). To do this, just add -DBUILD_DEMOS_off and -DBUILD_VKJSON=off to the cmake command line we will execute later. These aren&rsquo;t required to use the SDK, however you may want to build them just to complete the SDK (where possible).</p>
 <p><strong>Vulkan-LoaderAndValidationLayers</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off</code></pre></div>
-<p><strong>VulkanTools</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off -DBUILD_LOADER<span class="o">=</span>off -DBUILD_LAYERS<span class="o">=</span>off</code></pre></div>
-<p>The following build types are available:
-* Debug
-* RelWithDebInfo
-* Release</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off
+</code></pre></div><p><strong>VulkanTools</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off -DBUILD_LOADER<span class="o">=</span>off -DBUILD_LAYERS<span class="o">=</span>off
+</code></pre></div><p>The following build types are available:</p>
+<ul>
+<li>Debug</li>
+<li>RelWithDebInfo</li>
+<li>Release</li>
+</ul>
 <p>Finally we&rsquo;re on to the main point of the article. The compilation itself is fairly straightforward, just navigate to the build directory and call make. Remeber you can pass the <code>-j &lt;number&gt;</code> argument to thread the compilation.</p>
-
 <p>Once compilation of both projects finish, you can find the various binaries inside the build folders of <code>Vulkan-LoaderAndValidationTools</code>, <code>VulkanTools</code>, <code>spirv-tools</code> and <code>glslang</code> as described in the next section.</p>
-
 <p><em>Note that if you opted not to build the demos, the vulkaninfo app/program will not be available for you to use for testing. This is quite useful as it prints out the Vulkan configuration and details for your system, and can be useful as a vulkan equivalent of dxdiag, or even to test if your layers are installed correctly.</em></p>
-
 <p>To compile this, just build the demos by re-running cmake without the -DBUILD_DEMOS=off flag. However make sure you have extracted your build output (as described below) first, or build to another folder and turn off all of the other options.</p>
-
 <h1 id="final-steps">Final Steps</h1>
-
 <h2 id="build-output">Build Output</h2>
-
 <p>The various files required for the Vulkan SDK can be found inside the build directory, specified by using the -B flag with cmake.
 Extract the downloadable SDK to get the include files, as well as the json files for the various layers. <em>(You can also find these inside the source directories)</em></p>
-
 <h2 id="environment-configuration">Environment Configuration</h2>
-
 <p>You will need to set the following environment variables to be able to use the various aspects of the SDK:</p>
-
 <table>
 <thead>
 <tr>
@@ -330,26 +297,22 @@ Extract the downloadable SDK to get the include files, as well as the json files
 <th>Value</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>LD_LIBRARY_PATH</td>
 <td>Append</td>
 <td>&lt;root&gt;/lib</td>
 </tr>
-
 <tr>
 <td>PATH</td>
 <td>Append</td>
 <td>&lt;root&gt;/bin</td>
 </tr>
-
 <tr>
 <td>VK_LAYER_PATH</td>
 <td>Set</td>
 <td>&lt;root&gt;/lib/vulkan/layer</td>
 </tr>
-
 <tr>
 <td>VULKAN_SDK</td>
 <td>Set</td>
@@ -457,7 +420,7 @@ Extract the downloadable SDK to get the include files, as well as the json files
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.58.3</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.74.3</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
