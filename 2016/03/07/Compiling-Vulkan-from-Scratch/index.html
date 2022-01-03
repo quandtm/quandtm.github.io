@@ -94,7 +94,7 @@ A few weeks ago Vulkan 1.0 was released to the public, which marked the first ti
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.91.2" />
   <link rel="alternate" href="https://mquandt.com/index.xml" type="application/rss+xml" title="Michael Quandt"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://mquandt.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -267,12 +267,12 @@ A few weeks ago Vulkan 1.0 was released to the public, which marked the first ti
 <h2 id="cmake-configuration--compilation">CMAKE Configuration &amp; Compilation</h2>
 <p>This article focuses on GLIBC 2.12, however it should apply to most versions, and this is probably the section that will differ the most, so please test and remember that your mileage may vary.</p>
 <p>In 2.12 the string format macros are not globally defined, as the SDK expects. If you see any errors that require macros such as PRIx64, just add the following lines to the CMakeLists.txt file in both of the repositories you cloned:</p>
-<div class="highlight"><pre class="chroma"><code class="language-cmake" data-lang="cmake"><span class="nb">add_definitions</span><span class="p">(</span><span class="s">-D__STDC_FORMAT_MACROS</span><span class="p">)</span><span class="err">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmake" data-lang="cmake"><span class="nb">add_definitions</span><span class="p">(</span><span class="s">-D__STDC_FORMAT_MACROS</span><span class="p">)</span><span class="err">
 </span></code></pre></div><p>This line will enable those macros. You may also want to disable compilation of vkjson_info and the demos as some of them require the alignedmalloc function that was addded to a more recentl glibc (but which is missing from 2.12). To do this, just add -DBUILD_DEMOS_off and -DBUILD_VKJSON=off to the cmake command line we will execute later. These aren&rsquo;t required to use the SDK, however you may want to build them just to complete the SDK (where possible).</p>
 <p><strong>Vulkan-LoaderAndValidationLayers</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off
 </code></pre></div><p><strong>VulkanTools</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off -DBUILD_LOADER<span class="o">=</span>off -DBUILD_LAYERS<span class="o">=</span>off
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off -DBUILD_LOADER<span class="o">=</span>off -DBUILD_LAYERS<span class="o">=</span>off
 </code></pre></div><p>The following build types are available:</p>
 <ul>
 <li>Debug</li>
@@ -420,7 +420,7 @@ Extract the downloadable SDK to get the include files, as well as the json files
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.74.3</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.91.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

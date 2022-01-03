@@ -1,99 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://mquandt.com/tags/film/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/tags/games/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/2019/01/01/Lego-Rabbits-Superheroes-and-the-Future/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/post/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/tags/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/tags/vfx/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/tags/work/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/tags/cuda/</loc>
     <lastmod>2018-02-21T09:30:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/tags/gpgpu/</loc>
     <lastmod>2018-02-21T09:30:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API/</loc>
     <lastmod>2018-02-21T09:30:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/tags/tips/</loc>
     <lastmod>2018-02-21T09:30:00+11:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/2016/03/07/Compiling-Vulkan-from-Scratch/</loc>
     <lastmod>2016-03-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/2014/10/02/My-Unity-Porting-Toolkit/</loc>
     <lastmod>2014-10-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/2014/09/23/Mastering-Unity-2D-Game-Development-Review/</loc>
     <lastmod>2014-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/2014/06/05/Xbox-One-Dev-at-GDC/</loc>
     <lastmod>2014-06-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/2014/05/22/ngui-touch-input-issues/</loc>
     <lastmod>2014-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/2014/02/10/Review-Direct3D-Rendering-Cookbook/</loc>
     <lastmod>2014-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://mquandt.com/categories/</loc>
   </url>
-  
 </urlset>
