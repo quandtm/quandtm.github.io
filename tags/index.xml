@@ -6,14 +6,30 @@
     <description>Recent content in Tags on Michael Quandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>michael@mquandt.com (Michael Quandt)</managingEditor>
-    <webMaster>michael@mquandt.com (Michael Quandt)</webMaster>
-    <lastBuildDate>Tue, 01 Jan 2019 02:29:00 +1100</lastBuildDate><atom:link href="https://mquandt.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 May 2022 22:22:00 +0100</lastBuildDate><atom:link href="https://mquandt.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>quicknotes</title>
+      <link>https://mquandt.com/tags/quicknotes/</link>
+      <pubDate>Mon, 23 May 2022 22:22:00 +0100</pubDate>
+      
+      <guid>https://mquandt.com/tags/quicknotes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unreal</title>
+      <link>https://mquandt.com/tags/unreal/</link>
+      <pubDate>Mon, 23 May 2022 22:22:00 +0100</pubDate>
+      
+      <guid>https://mquandt.com/tags/unreal/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>film</title>
       <link>https://mquandt.com/tags/film/</link>
       <pubDate>Tue, 01 Jan 2019 02:29:00 +1100</pubDate>
-      <author>michael@mquandt.com (Michael Quandt)</author>
+      
       <guid>https://mquandt.com/tags/film/</guid>
       <description></description>
     </item>
@@ -22,7 +38,7 @@
       <title>games</title>
       <link>https://mquandt.com/tags/games/</link>
       <pubDate>Tue, 01 Jan 2019 02:29:00 +1100</pubDate>
-      <author>michael@mquandt.com (Michael Quandt)</author>
+      
       <guid>https://mquandt.com/tags/games/</guid>
       <description></description>
     </item>
@@ -31,7 +47,7 @@
       <title>vfx</title>
       <link>https://mquandt.com/tags/vfx/</link>
       <pubDate>Tue, 01 Jan 2019 02:29:00 +1100</pubDate>
-      <author>michael@mquandt.com (Michael Quandt)</author>
+      
       <guid>https://mquandt.com/tags/vfx/</guid>
       <description></description>
     </item>
@@ -40,7 +56,7 @@
       <title>work</title>
       <link>https://mquandt.com/tags/work/</link>
       <pubDate>Tue, 01 Jan 2019 02:29:00 +1100</pubDate>
-      <author>michael@mquandt.com (Michael Quandt)</author>
+      
       <guid>https://mquandt.com/tags/work/</guid>
       <description></description>
     </item>
@@ -49,7 +65,7 @@
       <title>cuda</title>
       <link>https://mquandt.com/tags/cuda/</link>
       <pubDate>Wed, 21 Feb 2018 09:30:00 +1100</pubDate>
-      <author>michael@mquandt.com (Michael Quandt)</author>
+      
       <guid>https://mquandt.com/tags/cuda/</guid>
       <description></description>
     </item>
@@ -58,7 +74,7 @@
       <title>gpgpu</title>
       <link>https://mquandt.com/tags/gpgpu/</link>
       <pubDate>Wed, 21 Feb 2018 09:30:00 +1100</pubDate>
-      <author>michael@mquandt.com (Michael Quandt)</author>
+      
       <guid>https://mquandt.com/tags/gpgpu/</guid>
       <description></description>
     </item>
@@ -67,7 +83,7 @@
       <title>tips</title>
       <link>https://mquandt.com/tags/tips/</link>
       <pubDate>Wed, 21 Feb 2018 09:30:00 +1100</pubDate>
-      <author>michael@mquandt.com (Michael Quandt)</author>
+      
       <guid>https://mquandt.com/tags/tips/</guid>
       <description></description>
     </item>

@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mquandt.com/</loc>
+    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+  </url><url>
+    <loc>https://mquandt.com/post/</loc>
+    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+  </url><url>
+    <loc>https://mquandt.com/tags/quicknotes/</loc>
+    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+  </url><url>
+    <loc>https://mquandt.com/tags/</loc>
+    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+  </url><url>
+    <loc>https://mquandt.com/tags/unreal/</loc>
+    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+  </url><url>
+    <loc>https://mquandt.com/2022/05/23/Unreal-Engine-File-Association/</loc>
+    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+  </url><url>
     <loc>https://mquandt.com/tags/film/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
   </url><url>
@@ -9,15 +27,6 @@
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
   </url><url>
     <loc>https://mquandt.com/2019/01/01/Lego-Rabbits-Superheroes-and-the-Future/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url><url>
-    <loc>https://mquandt.com/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url><url>
-    <loc>https://mquandt.com/post/</loc>
-    <lastmod>2019-01-01T02:29:00+11:00</lastmod>
-  </url><url>
-    <loc>https://mquandt.com/tags/</loc>
     <lastmod>2019-01-01T02:29:00+11:00</lastmod>
   </url><url>
     <loc>https://mquandt.com/tags/vfx/</loc>

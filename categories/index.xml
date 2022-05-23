@@ -5,8 +5,6 @@
     <link>https://mquandt.com/categories/</link>
     <description>Recent content in Categories on Michael Quandt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>michael@mquandt.com (Michael Quandt)</managingEditor>
-    <webMaster>michael@mquandt.com (Michael Quandt)</webMaster><atom:link href="https://mquandt.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://mquandt.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>quicknotes on Michael Quandt</title>
+    <link>https://mquandt.com/tags/quicknotes/</link>
+    <description>Recent content in quicknotes on Michael Quandt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 May 2022 22:22:00 +0100</lastBuildDate><atom:link href="https://mquandt.com/tags/quicknotes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unreal Engine File Association</title>
+      <link>https://mquandt.com/2022/05/23/Unreal-Engine-File-Association/</link>
+      <pubDate>Mon, 23 May 2022 22:22:00 +0100</pubDate>
+      
+      <guid>https://mquandt.com/2022/05/23/Unreal-Engine-File-Association/</guid>
+      <description>&lt;p&gt;When you setup Unreal Engine through the Epic Games launcher a file association is setup to allow tools to find your engine install, and enable some shell menu items when you right click on a uproject file.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t setup by default when you build from source, but it&amp;rsquo;s really easy to do.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
