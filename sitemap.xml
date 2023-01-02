@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mquandt.com/tags/colemak/</loc>
+    <lastmod>2023-01-02T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://mquandt.com/tags/keyboards/</loc>
+    <lastmod>2023-01-02T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://mquandt.com/2023/01/02/Learning-a-New-Keyboard-Layout-In-2023/</loc>
+    <lastmod>2023-01-02T00:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://mquandt.com/</loc>
-    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+    <lastmod>2023-01-02T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://mquandt.com/post/</loc>
-    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+    <lastmod>2023-01-02T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://mquandt.com/tags/quicknotes/</loc>
-    <lastmod>2022-05-23T22:22:00+01:00</lastmod>
+    <loc>https://mquandt.com/tags/programming/</loc>
+    <lastmod>2023-01-02T00:00:00+01:00</lastmod>
   </url><url>
     <loc>https://mquandt.com/tags/</loc>
+    <lastmod>2023-01-02T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://mquandt.com/tags/quicknotes/</loc>
     <lastmod>2022-05-23T22:22:00+01:00</lastmod>
   </url><url>
     <loc>https://mquandt.com/tags/unreal/</loc>

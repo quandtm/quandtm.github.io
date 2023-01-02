@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Michael Quandt</title>
+    <link>https://mquandt.com/tags/programming/</link>
+    <description>Recent content in programming on Michael Quandt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://mquandt.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning a New Keyboard Layout In 2023</title>
+      <link>https://mquandt.com/2023/01/02/Learning-a-New-Keyboard-Layout-In-2023/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://mquandt.com/2023/01/02/Learning-a-New-Keyboard-Layout-In-2023/</guid>
+      <description>&lt;p&gt;One of the things I keep trying to do is improve the speed with which I can transfer words or commands from my brain into the computer.
+Typing is the default interface for this so I&amp;rsquo;ve tried to find ways to speed this up so I can code and write faster.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
