@@ -95,7 +95,7 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
-  <meta name="generator" content="Hugo 0.110.0">
+  <meta name="generator" content="Hugo 0.119.0">
   <link rel="alternate" href="https://mquandt.com/index.xml" type="application/rss+xml" title="Michael Quandt"><link rel="stylesheet" href="https://mquandt.com/css/katex.min.css" />
   <link rel="stylesheet" href="https://mquandt.com/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://mquandt.com/css/bootstrap.min.css" /><link rel="stylesheet" href="https://mquandt.com/css/main.css" /><link rel="stylesheet" href="https://mquandt.com/css/fonts.css" /><link rel="stylesheet" href="https://mquandt.com/css/syntax.css" /><link rel="stylesheet" href="https://mquandt.com/css/codeblock.css" /><link rel="stylesheet" href="https://mquandt.com/css/photoswipe.min.css" />
@@ -215,7 +215,9 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
   
   
     
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Michael Quandt
+      
+        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Michael Quandt
+      
     
   
   
@@ -240,7 +242,7 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
         <p>NGUI is widely used, and upgrading from older versions can be challenging depending on the complexity of your game. I have seen this issue pop up a few times while converting projects and thought I might note it down with a quick solution.</p>
 <p>When converting to the Windows Store or Windows Phone you might encounter an issue where a button seems to do nothing when tapped. This occurs because the OnClick event is actually firing twice, in quick succession, often cancelling out the effect of the original press.</p>
 <p>To resolve this you just need to add a small delay check to ensure it doesn&rsquo;t fire twice. (This is known as <em>debouncing</em> in electronics)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">private</span> <span class="kt">float</span> <span class="n">_prevPress</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">private</span> <span class="kt">float</span> <span class="n">_prevPress</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">void</span> <span class="n">OnClick</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>  
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">Time</span><span class="p">.</span><span class="n">realtimeSinceStartup</span> <span class="p">&lt;</span> <span class="p">(</span><span class="n">_prevPress</span> <span class="p">+</span> <span class="m">0.15f</span><span class="p">))</span>
@@ -285,6 +287,7 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
       
 <footer>
   <div class="container">
+    
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
@@ -359,18 +362,18 @@ When converting to the Windows Store or Windows Phone you might encounter an iss
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.110.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.119.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
     </div>
   </div>
-</footer><script src="https://mquandt.com/js/katex.min.js"></script>
-<script src="https://mquandt.com/js/auto-render.min.js"></script>
-<script src="https://mquandt.com/js/jquery-3.5.1.slim.min.js"></script>
+</footer><script defer src="https://mquandt.com/js/katex.min.js"></script>
+<script defer src="https://mquandt.com/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script src="https://mquandt.com/js/jquery-3.7.0.slim.min.js"></script>
 <script src="https://mquandt.com/js/bootstrap.min.js"></script>
 
-<script src="https://mquandt.com/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://mquandt.com/js/photoswipe.min.js"></script>
+<script src="https://mquandt.com/js/main.js"></script><script src="https://mquandt.com/js/photoswipe.min.js"></script>
 <script src="https://mquandt.com/js/photoswipe-ui-default.min.js"></script><script src="https://mquandt.com/js/load-photoswipe.js"></script>
 
 
