@@ -6,114 +6,91 @@
     <description>Recent content in Tags on Michael Quandt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://mquandt.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0100</lastBuildDate>
+    <atom:link href="https://mquandt.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>colemak</title>
       <link>https://mquandt.com/tags/colemak/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0100</pubDate>
-      
       <guid>https://mquandt.com/tags/colemak/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>keyboards</title>
       <link>https://mquandt.com/tags/keyboards/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0100</pubDate>
-      
       <guid>https://mquandt.com/tags/keyboards/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>programming</title>
       <link>https://mquandt.com/tags/programming/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0100</pubDate>
-      
       <guid>https://mquandt.com/tags/programming/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>quicknotes</title>
       <link>https://mquandt.com/tags/quicknotes/</link>
       <pubDate>Mon, 23 May 2022 22:22:00 +0100</pubDate>
-      
       <guid>https://mquandt.com/tags/quicknotes/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>unreal</title>
       <link>https://mquandt.com/tags/unreal/</link>
       <pubDate>Mon, 23 May 2022 22:22:00 +0100</pubDate>
-      
       <guid>https://mquandt.com/tags/unreal/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>film</title>
       <link>https://mquandt.com/tags/film/</link>
       <pubDate>Tue, 01 Jan 2019 02:29:00 +1100</pubDate>
-      
       <guid>https://mquandt.com/tags/film/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>games</title>
       <link>https://mquandt.com/tags/games/</link>
       <pubDate>Tue, 01 Jan 2019 02:29:00 +1100</pubDate>
-      
       <guid>https://mquandt.com/tags/games/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>vfx</title>
       <link>https://mquandt.com/tags/vfx/</link>
       <pubDate>Tue, 01 Jan 2019 02:29:00 +1100</pubDate>
-      
       <guid>https://mquandt.com/tags/vfx/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>work</title>
       <link>https://mquandt.com/tags/work/</link>
       <pubDate>Tue, 01 Jan 2019 02:29:00 +1100</pubDate>
-      
       <guid>https://mquandt.com/tags/work/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>cuda</title>
       <link>https://mquandt.com/tags/cuda/</link>
       <pubDate>Wed, 21 Feb 2018 09:30:00 +1100</pubDate>
-      
       <guid>https://mquandt.com/tags/cuda/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>gpgpu</title>
       <link>https://mquandt.com/tags/gpgpu/</link>
       <pubDate>Wed, 21 Feb 2018 09:30:00 +1100</pubDate>
-      
       <guid>https://mquandt.com/tags/gpgpu/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>tips</title>
       <link>https://mquandt.com/tags/tips/</link>
       <pubDate>Wed, 21 Feb 2018 09:30:00 +1100</pubDate>
-      
       <guid>https://mquandt.com/tags/tips/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
