@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
@@ -12,21 +14,23 @@
 
       <title>Hidden Overloads in the CUDA Driver API - </title>
 
-  <meta name="description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.">
+  <meta name="description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime.
+One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer.
+On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.">
   <meta name="author" content="Michael Quandt"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
     "name": "Michael Quandt",
     
-    "url": "https:\/\/mquandt.com"
+    "url": "https:\/\/mquandt.com\/"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https:\/\/mquandt.com"
+  "url": "https:\/\/mquandt.com\/"
   
   
   
@@ -41,7 +45,7 @@
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https:\/\/mquandt.com",
+          "@id": "https:\/\/mquandt.com\/",
           "name": "home"
         }
     },{
@@ -61,20 +65,20 @@
     "name" : "Michael Quandt"
   },
   "headline": "Hidden Overloads in the CUDA Driver API",
-  "description" : "We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had \u0026gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.",
+  "description" : "We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had \u0026gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.\n",
   "inLanguage" : "en",
   "wordCount":  148 ,
-  "datePublished" : "2018-02-21T09:30:00",
-  "dateModified" : "2018-02-21T09:30:00",
-  "image" : "https:\/\/mquandt.com",
+  "datePublished" : "2018-02-21T09:30:00\u002b11:00",
+  "dateModified" : "2018-02-21T09:30:00\u002b11:00",
+  "image" : "https:\/\/mquandt.com\/",
   "keywords" : [ "cuda, gpgpu, tips" ],
   "mainEntityOfPage" : "https:\/\/mquandt.com\/2018\/02\/21\/Hidden-Overloads-in-the-CUDA-Driver-API\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https:\/\/mquandt.com",
+    "name" : "https:\/\/mquandt.com\/",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https:\/\/mquandt.com",
+        "url" : "https:\/\/mquandt.com\/",
         "height" :  60 ,
         "width" :  60
     }
@@ -82,18 +86,22 @@
 }
 </script>
 
+
 <meta property="og:title" content="Hidden Overloads in the CUDA Driver API" />
-<meta property="og:description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer. On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.">
+<meta property="og:description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime.
+One function used to retrieve the memory limit of the GPU was always returning a 32 bit value even if the card had &gt;4GB of VRAM and we were passing a 64 bit integer.
+On further investigation through forums we discovered the function originally took a 32bit integer and there was a newer version with the same name.">
 <meta property="og:url" content="https://mquandt.com/2018/02/21/Hidden-Overloads-in-the-CUDA-Driver-API/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Michael Quandt" />
 
   <meta name="twitter:title" content="Hidden Overloads in the CUDA Driver API" />
-  <meta name="twitter:description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime. One function used to retrieve the memory limit of the GPU was always returning a 32 bit …">
+  <meta name="twitter:description" content="We recently hit an issue with a system at work which manually linked against the CUDA driver API at runtime.
+One function used to retrieve the memory limit of the GPU was always returning a 32 bit …">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
-  <meta name="generator" content="Hugo 0.122.0">
+  <meta name="generator" content="Hugo 0.134.0">
   <link rel="alternate" href="https://mquandt.com/index.xml" type="application/rss+xml" title="Michael Quandt"><link rel="stylesheet" href="https://mquandt.com/css/katex.min.css" />
   <link rel="stylesheet" href="https://mquandt.com/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://mquandt.com/css/bootstrap.min.css" /><link rel="stylesheet" href="https://mquandt.com/css/main.css" /><link rel="stylesheet" href="https://mquandt.com/css/fonts.css" /><link rel="stylesheet" href="https://mquandt.com/css/syntax.css" /><link rel="stylesheet" href="https://mquandt.com/css/codeblock.css" /><link rel="stylesheet" href="https://mquandt.com/css/photoswipe.min.css" />
@@ -110,7 +118,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://mquandt.com">Michael Quandt</a>
+      <a class="navbar-brand" href="https://mquandt.com/">Michael Quandt</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -249,10 +257,13 @@ Using that name led to the correct behaviour with our existing code.</p>
         
           <div class="blog-tags">
             
+              
               <a href="https://mquandt.com/tags/cuda/">cuda</a>&nbsp;
             
+              
               <a href="https://mquandt.com/tags/gpgpu/">gpgpu</a>&nbsp;
             
+              
               <a href="https://mquandt.com/tags/tips/">tips</a>&nbsp;
             
           </div>
@@ -285,8 +296,7 @@ Using that name led to the correct behaviour with our existing code.</p>
   </div>
 </div>
 
-      
-<footer>
+      <footer>
   <div class="container">
     
     <div class="row">
@@ -334,14 +344,7 @@ Using that name led to the correct behaviour with our existing code.</p>
                 </a>
               </li>
           
-          <li>
-            <a href="" title="RSS">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
+          
           
         </ul>
         <p class="credits copyright text-muted">
@@ -358,12 +361,12 @@ Using that name led to the correct behaviour with our existing code.</p>
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://mquandt.com">Michael Quandt</a>
+            <a href="https://mquandt.com/">Michael Quandt</a>
           
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.122.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.134.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -376,6 +379,7 @@ Using that name led to the correct behaviour with our existing code.</p>
 
 <script src="https://mquandt.com/js/main.js"></script><script src="https://mquandt.com/js/photoswipe.min.js"></script>
 <script src="https://mquandt.com/js/photoswipe-ui-default.min.js"></script><script src="https://mquandt.com/js/load-photoswipe.js"></script>
+
 
 
 

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
@@ -12,23 +14,24 @@
 
       <title>Compiling Vulkan from Scratch - </title>
 
-  <meta name="description" content="Introduction &amp; Motivation Works for SDK version 1.0.3
+  <meta name="description" content="Introduction &amp; Motivation
+Works for SDK version 1.0.3
 A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.
-At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest.">
+At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest. This however means that our version of GLIBC is older than what you may find in more recent Ubuntu installs, which LunarG targetted for the Linux SDK.">
   <meta name="author" content="Michael Quandt"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
     "name": "Michael Quandt",
     
-    "url": "https:\/\/mquandt.com"
+    "url": "https:\/\/mquandt.com\/"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https:\/\/mquandt.com"
+  "url": "https:\/\/mquandt.com\/"
   
   
   
@@ -43,7 +46,7 @@ At Animal Logic we use an older version of CentOS that aligns with the VFX refer
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https:\/\/mquandt.com",
+          "@id": "https:\/\/mquandt.com\/",
           "name": "home"
         }
     },{
@@ -63,20 +66,20 @@ At Animal Logic we use an older version of CentOS that aligns with the VFX refer
     "name" : "Michael Quandt"
   },
   "headline": "Compiling Vulkan from Scratch",
-  "description" : "Introduction \u0026amp; Motivation Works for SDK version 1.0.3\nA few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.\nAt Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest.",
+  "description" : "Introduction \u0026amp; Motivation Works for SDK version 1.0.3\nA few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.\nAt Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest. This however means that our version of GLIBC is older than what you may find in more recent Ubuntu installs, which LunarG targetted for the Linux SDK.\n",
   "inLanguage" : "en",
   "wordCount":  928 ,
-  "datePublished" : "2016-03-07T00:00:00",
-  "dateModified" : "2016-03-07T00:00:00",
-  "image" : "https:\/\/mquandt.com",
+  "datePublished" : "2016-03-07T00:00:00\u002b00:00",
+  "dateModified" : "2016-03-07T00:00:00\u002b00:00",
+  "image" : "https:\/\/mquandt.com\/",
   "keywords" : [ "" ],
   "mainEntityOfPage" : "https:\/\/mquandt.com\/2016\/03\/07\/Compiling-Vulkan-from-Scratch\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https:\/\/mquandt.com",
+    "name" : "https:\/\/mquandt.com\/",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https:\/\/mquandt.com",
+        "url" : "https:\/\/mquandt.com\/",
         "height" :  60 ,
         "width" :  60
     }
@@ -84,21 +87,24 @@ At Animal Logic we use an older version of CentOS that aligns with the VFX refer
 }
 </script>
 
+
 <meta property="og:title" content="Compiling Vulkan from Scratch" />
-<meta property="og:description" content="Introduction &amp; Motivation Works for SDK version 1.0.3
+<meta property="og:description" content="Introduction &amp; Motivation
+Works for SDK version 1.0.3
 A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by LunarG). If you have a relatively recent Ubuntu (or debian) OS install, or Windows, you can just download the SDK from the Official Website.
-At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest.">
+At Animal Logic we use an older version of CentOS that aligns with the VFX reference platform rather than the latest and greatest. This however means that our version of GLIBC is older than what you may find in more recent Ubuntu installs, which LunarG targetted for the Linux SDK.">
 <meta property="og:url" content="https://mquandt.com/2016/03/07/Compiling-Vulkan-from-Scratch/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Michael Quandt" />
 
   <meta name="twitter:title" content="Compiling Vulkan from Scratch" />
-  <meta name="twitter:description" content="Introduction &amp; Motivation Works for SDK version 1.0.3
+  <meta name="twitter:description" content="Introduction &amp; Motivation
+Works for SDK version 1.0.3
 A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by …">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@quandtm" />
   <meta name="twitter:creator" content="@quandtm" />
-  <meta name="generator" content="Hugo 0.122.0">
+  <meta name="generator" content="Hugo 0.134.0">
   <link rel="alternate" href="https://mquandt.com/index.xml" type="application/rss+xml" title="Michael Quandt"><link rel="stylesheet" href="https://mquandt.com/css/katex.min.css" />
   <link rel="stylesheet" href="https://mquandt.com/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://mquandt.com/css/bootstrap.min.css" /><link rel="stylesheet" href="https://mquandt.com/css/main.css" /><link rel="stylesheet" href="https://mquandt.com/css/fonts.css" /><link rel="stylesheet" href="https://mquandt.com/css/syntax.css" /><link rel="stylesheet" href="https://mquandt.com/css/codeblock.css" /><link rel="stylesheet" href="https://mquandt.com/css/photoswipe.min.css" />
@@ -115,7 +121,7 @@ A few weeks ago Vulkan 1.0 was released to the public, which marked the first ti
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://mquandt.com">Michael Quandt</a>
+      <a class="navbar-brand" href="https://mquandt.com/">Michael Quandt</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -295,35 +301,35 @@ Extract the downloadable SDK to get the include files, as well as the json files
 <h2 id="environment-configuration">Environment Configuration</h2>
 <p>You will need to set the following environment variables to be able to use the various aspects of the SDK:</p>
 <table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Action</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LD_LIBRARY_PATH</td>
-<td>Append</td>
-<td>&lt;root&gt;/lib</td>
-</tr>
-<tr>
-<td>PATH</td>
-<td>Append</td>
-<td>&lt;root&gt;/bin</td>
-</tr>
-<tr>
-<td>VK_LAYER_PATH</td>
-<td>Set</td>
-<td>&lt;root&gt;/lib/vulkan/layer</td>
-</tr>
-<tr>
-<td>VULKAN_SDK</td>
-<td>Set</td>
-<td>&lt;root&gt;</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Variable</th>
+          <th style="text-align: left">Action</th>
+          <th style="text-align: left">Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">LD_LIBRARY_PATH</td>
+          <td style="text-align: left">Append</td>
+          <td style="text-align: left">&lt;root&gt;/lib</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">PATH</td>
+          <td style="text-align: left">Append</td>
+          <td style="text-align: left">&lt;root&gt;/bin</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">VK_LAYER_PATH</td>
+          <td style="text-align: left">Set</td>
+          <td style="text-align: left">&lt;root&gt;/lib/vulkan/layer</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">VULKAN_SDK</td>
+          <td style="text-align: left">Set</td>
+          <td style="text-align: left">&lt;root&gt;</td>
+      </tr>
+  </tbody>
 </table>
 
 
@@ -356,8 +362,7 @@ Extract the downloadable SDK to get the include files, as well as the json files
   </div>
 </div>
 
-      
-<footer>
+      <footer>
   <div class="container">
     
     <div class="row">
@@ -405,14 +410,7 @@ Extract the downloadable SDK to get the include files, as well as the json files
                 </a>
               </li>
           
-          <li>
-            <a href="" title="RSS">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
+          
           
         </ul>
         <p class="credits copyright text-muted">
@@ -429,12 +427,12 @@ Extract the downloadable SDK to get the include files, as well as the json files
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://mquandt.com">Michael Quandt</a>
+            <a href="https://mquandt.com/">Michael Quandt</a>
           
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.122.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.134.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
@@ -447,6 +445,7 @@ Extract the downloadable SDK to get the include files, as well as the json files
 
 <script src="https://mquandt.com/js/main.js"></script><script src="https://mquandt.com/js/photoswipe.min.js"></script>
 <script src="https://mquandt.com/js/photoswipe-ui-default.min.js"></script><script src="https://mquandt.com/js/load-photoswipe.js"></script>
+
 
 
 
