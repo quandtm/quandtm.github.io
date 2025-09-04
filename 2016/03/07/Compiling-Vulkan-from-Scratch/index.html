@@ -102,9 +102,7 @@ At Animal Logic we use an older version of CentOS that aligns with the VFX refer
 Works for SDK version 1.0.3
 A few weeks ago Vulkan 1.0 was released to the public, which marked the first time those outside of Khronos saw the API and SDK (provided by …">
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@quandtm" />
-  <meta name="twitter:creator" content="@quandtm" />
-  <meta name="generator" content="Hugo 0.134.0">
+  <meta name="generator" content="Hugo 0.149.0">
   <link rel="alternate" href="https://mquandt.com/index.xml" type="application/rss+xml" title="Michael Quandt"><link rel="stylesheet" href="https://mquandt.com/css/katex.min.css" />
   <link rel="stylesheet" href="https://mquandt.com/fontawesome/css/all.css" />
   <link rel="stylesheet" href="https://mquandt.com/css/bootstrap.min.css" /><link rel="stylesheet" href="https://mquandt.com/css/main.css" /><link rel="stylesheet" href="https://mquandt.com/css/fonts.css" /><link rel="stylesheet" href="https://mquandt.com/css/syntax.css" /><link rel="stylesheet" href="https://mquandt.com/css/codeblock.css" /><link rel="stylesheet" href="https://mquandt.com/css/photoswipe.min.css" />
@@ -278,12 +276,12 @@ A few weeks ago Vulkan 1.0 was released to the public, which marked the first ti
 <h2 id="cmake-configuration--compilation">CMAKE Configuration &amp; Compilation</h2>
 <p>This article focuses on GLIBC 2.12, however it should apply to most versions, and this is probably the section that will differ the most, so please test and remember that your mileage may vary.</p>
 <p>In 2.12 the string format macros are not globally defined, as the SDK expects. If you see any errors that require macros such as PRIx64, just add the following lines to the CMakeLists.txt file in both of the repositories you cloned:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmake" data-lang="cmake"><span class="line"><span class="cl"><span class="nb">add_definitions</span><span class="p">(</span><span class="s">-D__STDC_FORMAT_MACROS</span><span class="p">)</span><span class="err">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmake" data-lang="cmake"><span style="display:flex;"><span>add_definitions(<span style="color:#e6db74">-D__STDC_FORMAT_MACROS</span>)<span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><p>This line will enable those macros. You may also want to disable compilation of vkjson_info and the demos as some of them require the alignedmalloc function that was addded to a more recentl glibc (but which is missing from 2.12). To do this, just add -DBUILD_DEMOS_off and -DBUILD_VKJSON=off to the cmake command line we will execute later. These aren&rsquo;t required to use the SDK, however you may want to build them just to complete the SDK (where possible).</p>
 <p><strong>Vulkan-LoaderAndValidationLayers</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>&lt;build type&gt; -DBUILD_TESTS<span style="color:#f92672">=</span>off -DBUILD_VKJSON<span style="color:#f92672">=</span>off -DBUILD_DEMOS<span style="color:#f92672">=</span>off
 </span></span></code></pre></div><p><strong>VulkanTools</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;build type&gt; -DBUILD_TESTS<span class="o">=</span>off -DBUILD_VKJSON<span class="o">=</span>off -DBUILD_DEMOS<span class="o">=</span>off -DBUILD_LOADER<span class="o">=</span>off -DBUILD_LAYERS<span class="o">=</span>off
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cmake -H. -B&lt;build folder&gt; -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>&lt;build type&gt; -DBUILD_TESTS<span style="color:#f92672">=</span>off -DBUILD_VKJSON<span style="color:#f92672">=</span>off -DBUILD_DEMOS<span style="color:#f92672">=</span>off -DBUILD_LOADER<span style="color:#f92672">=</span>off -DBUILD_LAYERS<span style="color:#f92672">=</span>off
 </span></span></code></pre></div><p>The following build types are available:</p>
 <ul>
 <li>Debug</li>
@@ -303,31 +301,31 @@ Extract the downloadable SDK to get the include files, as well as the json files
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Variable</th>
-          <th style="text-align: left">Action</th>
-          <th style="text-align: left">Value</th>
+          <th>Variable</th>
+          <th>Action</th>
+          <th>Value</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">LD_LIBRARY_PATH</td>
-          <td style="text-align: left">Append</td>
-          <td style="text-align: left">&lt;root&gt;/lib</td>
+          <td>LD_LIBRARY_PATH</td>
+          <td>Append</td>
+          <td>&lt;root&gt;/lib</td>
       </tr>
       <tr>
-          <td style="text-align: left">PATH</td>
-          <td style="text-align: left">Append</td>
-          <td style="text-align: left">&lt;root&gt;/bin</td>
+          <td>PATH</td>
+          <td>Append</td>
+          <td>&lt;root&gt;/bin</td>
       </tr>
       <tr>
-          <td style="text-align: left">VK_LAYER_PATH</td>
-          <td style="text-align: left">Set</td>
-          <td style="text-align: left">&lt;root&gt;/lib/vulkan/layer</td>
+          <td>VK_LAYER_PATH</td>
+          <td>Set</td>
+          <td>&lt;root&gt;/lib/vulkan/layer</td>
       </tr>
       <tr>
-          <td style="text-align: left">VULKAN_SDK</td>
-          <td style="text-align: left">Set</td>
-          <td style="text-align: left">&lt;root&gt;</td>
+          <td>VULKAN_SDK</td>
+          <td>Set</td>
+          <td>&lt;root&gt;</td>
       </tr>
   </tbody>
 </table>
@@ -381,16 +379,6 @@ Extract the downloadable SDK to get the include files, as well as the json files
               </li>
               <li>
 		
-		  <a href="https://twitter.com/quandtm" title="Twitter">
-		
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-		
 		  <a href="https://linkedin.com/in/mquandt" title="LinkedIn">
 		
                   <span class="fa-stack fa-lg">
@@ -432,7 +420,7 @@ Extract the downloadable SDK to get the include files, as well as the json files
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.134.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.149.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
